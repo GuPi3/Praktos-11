@@ -1,0 +1,19 @@
+﻿<Window x:Class="Praktos_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktos_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Решить" HorizontalAlignment="Left" Click="firstSolution" Margin="116,177,0,0" VerticalAlignment="Top"/>
+        <Button Content="Решить" Click="secondSolution" HorizontalAlignment="Left" Margin="318,177,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="firstExpression" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="69,10,593,305">
+        </ListBox>
+        <ListBox x:Name="secondExpression" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="262,10,400,305"/>
+        <Button Content="информаця" Click="Info" HorizontalAlignment="Left" Margin="38,385,0,0" VerticalAlignment="Top"/>
+        <Button Content="выход" Click="Exit" HorizontalAlignment="Left" Margin="207,385,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
